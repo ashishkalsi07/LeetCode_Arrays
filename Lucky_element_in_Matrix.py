@@ -4,12 +4,12 @@ class Solution(object):
         lucky_numbers = []
         matrix = np.array(matrix)
 
-    # Iterate through each row to find the minimum element in the row
+   
         for i in range(matrix.shape[0]):
             row_min = np.min(matrix[i, :])
             min_col_index = np.argmin(matrix[i, :])
 
-            # Check if the row minimum is the maximum in its column
+            
             if row_min == np.max(matrix[:, min_col_index]):
                 lucky_numbers.append(row_min)
 
