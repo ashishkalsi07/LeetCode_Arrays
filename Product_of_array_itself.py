@@ -11,6 +11,6 @@ class Solution(object):
             ans.append(x)
         return ans
 S=Solution()
-nums=[-1,1,0,-3,3]
+nums=[1,2,3,4]
 ans=S.productExceptSelf(nums)
 print(ans)
