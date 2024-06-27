@@ -9,7 +9,6 @@ class Solution(object):
         #     result ^= num
         # return result 
         fre={}
-        an=[]
         for i in nums:
             if i in fre:
                 fre[i] += 1
@@ -17,8 +16,7 @@ class Solution(object):
                 fre[i] = 1
         for i in fre:
             if fre[i] == 1:
-                an.append(i)
-        return an
+                return i
 
         
 S=Solution()
