@@ -6,11 +6,12 @@ class Solution(object):
         """
         elementSum=sum(nums)
         n=len(nums)
-        digits = [int(digit) for number in nums for digit in str(number)]
+        digits = []
+        for number in nums:
+            for digit in str(number):
+                digits.append(int(digit))
         ans=sum(digits)
         return elementSum - ans
-
-
 
 S=Solution()
 nums=[1,2,3,4]
