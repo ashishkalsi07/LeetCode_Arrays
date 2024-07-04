@@ -6,8 +6,6 @@ class Solution(object):
         return x
 
 
-
-
 S=Solution()
 nums1=[1,1,1,1]
 nums2=[1,1,1,1]
